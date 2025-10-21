@@ -1,0 +1,160 @@
+:root {
+    --textColor: white;
+}
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: clamp(1.5rem, 6vw + 1rem, 8rem);
+    padding: 0vh;
+    margin: 1vh;
+}
+
+.container {
+    /* border: .3vh solid rgb(0, 126, 244); */
+    padding: 1vh;
+    margin: .5vh;
+    height: auto;
+}
+
+#main_container {
+    border: 3px solid rgba(0, 0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+
+/* Burger Img CSS*/
+.mainBurgerDisplay{
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+    border-radius: 1vh;
+    filter: drop-shadow(0 0 .3vh rgba(0, 0, 0, 0.517));
+    
+}
+
+.burgerImgContainer {
+    /* border: 3px solid rgb(136, 255, 0); */
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.burgerImgContainer:hover .burgerImg{
+    transform: rotatez(3deg) scale(.9);
+    filter: drop-shadow(0 0 1vh rgb(0, 0, 0));
+}
+
+.burgerImg {
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    object-fit: cover;
+    transition: all .8s ease-in-out;
+    border-radius: 1vh;
+}
+/* Burger Img CSS -  END */
+
+
+.burgerFeatures{
+    flex-basis: 60%;
+}
+
+.burgerFeaturesBurgerNamePrice{
+    padding: 0vh;
+    margin: 0vh;
+    display: flex;
+}
+
+.locationLink {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 0vh solid orange;
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: rgb(255, 166, 0);
+    transition: all .2s ease-in-out;
+    font-size: clamp(1.375rem, 1.5vw + 0.75rem, 1.875rem);
+}
+
+.locationLink:hover {
+    padding: 1.4vh;
+    background-color: rgb(255, 195, 84);
+    filter: drop-shadow(0vh 0vh .3vh rgba(255, 170, 0, 0.472));
+}
+
+/* REWORK - TEXT STUFF */
+h3 {
+    padding: 0vh;
+    margin: 1vh;
+    font-size: clamp(1.5rem, 4vw + 1rem, 4rem);
+    color: var(--textColor);
+}
+
+h4 {
+    padding: 0vh;
+    margin: 1vh;
+    font-size: clamp(1.25rem, 3vw + 0.5rem, 2.25rem);
+    color:var(--textColor);
+}
+
+p, li {
+    padding: 0vh;
+    margin: 1vh;
+    font-size: clamp(1rem, 2vw + 0.7rem, 1.5rem);
+    color:var(--textColor);
+}
+
+/* REWORK */
+
+.vl {
+  border-left: .5vh solid rgb(255, 161, 30);
+  border-radius: 0vh;
+  height: auto;
+  margin: 1vh;
+}
+
+/* Burger Pros / Cons CSS*/
+
+.burgerFeaturesProsCons {
+    padding: 0vh;
+    margin: 0vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.burgerPros, .burgerCons {
+    padding: 0vh;
+    margin: 0vh;
+    list-style: none;
+}
+
+.burgerProsDiv h4, .burgerConsDiv h4{
+    padding: 0vh;
+    margin: 0vh;
+}
+
+.burgerProsDiv,.burgerConsDiv{
+    flex-basis: 50%;
+    padding: 1vh;
+}
+
+/* Burger Pros / Cons CSS -  END */

@@ -2,27 +2,60 @@ const mainDiv = document.getElementById("main_container");
 
 const burgers = [
     {
-        name:"Classic Burger",
-        price:10.99,
-        imgsrc:"burgerImgs/burger.jpg",
+        name:"Classic Burger - Bubbas",
+        price:13.49,
+        imgsrc:"burgerImgs/bubbasclassic.webp",
         resturant:"Bubbas",
         resturantLink:"https://www.bubbas33.com",
-        pros: ["yum","yumm", "yummm"],
-        cons: ["ew", "eww", "ewww"],
-        rating: 7,
-        notes: "hellos"
+        pros: ["- Burger was well seasoned","- Cheese was perfectly melted. Loved it", "- Fries were good"],
+        cons: ["- Fries were seasoned a bit too much for me", "", ""],
+        rating: 8.5,
+        notes: "A Classic"
     },
     {
-        name:"Fire Burger",
-        price:13.99,
-        imgsrc:"burgerImgs/alsoBurger.png",
-        resturant:"The Chefs table",
+        name:"Classic Burger - Yardhouse",
+        price:15.99,
+        imgsrc:"burgerImgs/yardhouseclassic.webp",
+        resturant:"Yard House",
+        resturantLink:"https://www.yardhouse.com/locations/fl/orlando/orlando-icon-park/8352?cmpid=br:yh_ag:ie_ch:loc_ca:YHGMB_sn:gmb_gt:orlando-fl-8352_pl:locurl_rd:1049",
+        pros: ["- Bun and cheese were DELICIOUS","- Priced well", "- Simple but seasoning and flavor make up for it"],
+        cons: ["- Meat was slightly burnt on the edges", "", ""],
+        rating: 9.2,
+        notes: "I NEED to eat this again"
+    },
+    {
+        name:"Bacon Cheeseburger - Bubbas",
+        price:14.49,
+        imgsrc:"burgerImgs/bubbasbaconcheese.webp",
+        resturant:"Bubbas",
         resturantLink:"https://www.bubbas33.com",
-        pros: ["yum1","yumm2", "yummm3"],
-        cons: ["ew1", "eww2", "ewww3"],
-        rating: 100,
-        notes: "hellos"
-    }
+        pros: ["- Cheese (on the burger) was good","- was good without bacon", ""],
+        cons: ["- Cheese on fries was solid.", "- Bacon tasted funny", "- Side sauce was bland"],
+        rating: 4.75,
+        notes: "Least fav from bubbas"
+    },
+    {
+        name:"??? - The Chefs table",
+        price:29.99,
+        imgsrc:"burgerImgs/thechefstable.webp",
+        resturant:"The Chefs Table",
+        resturantLink:"https://www.chefstablehouston.com",
+        pros: ["- Cheese and bun was buttery!","- Well seasoned", "- Juicy patty"],
+        cons: ["- horribly overpriced ", "- Wouldve liked more toppings", ""],
+        rating: 8.5,
+        notes: "This was fire icl"
+    },
+    // {
+    //     name:"Wild Shroomin Burger - Bubbas",
+    //     price:14.49,
+    //     imgsrc:"burgerImgs/bubbasbaconcheese.webp",
+    //     resturant:"Bubbas",
+    //     resturantLink:"https://www.bubbas33.com",
+    //     pros: ["- Cheese (on the burger) was good","- was good without bacon", ""],
+    //     cons: ["- Cheese on fries was solid.", "- Bacon tasted funny", "- Side sauce was bland"],
+    //     rating: 4.75,
+    //     notes: "Least fav from bubbas"
+    // }
 ]
 
 burgers.forEach(burger => {
@@ -73,7 +106,7 @@ burgers.forEach(burger => {
 
                     </div>
 
-                    <p class="burger_description">Rating: ${burger.rating}/10</p>
+                    <p class="burger_description rating">Rating: ${burger.rating}/10 | ${burger.notes}</p>
                 </div>
                 
             </div>
